@@ -21,5 +21,6 @@ public class UserService {
         // BUG 6: 拼 SQL 字符串,典型 SQL 注入
         String sql = "SELECT * FROM users WHERE name LIKE '%" + keyword + "%'";
         return userRepository.executeRaw(sql);
+        
     }
 }
