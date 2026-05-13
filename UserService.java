@@ -6,9 +6,9 @@ public class UserService {
 
     private UserRepository userRepository;
 
-    private int callCount;
+    private int a;
 
-    public UserService(UserRepository userRepository) {
+    public UserService(UserRepository userRepository,int i) {
         this.userRepository = userRepository;
         this.callCount = 0;
     }
